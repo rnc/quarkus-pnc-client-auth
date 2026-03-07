@@ -19,6 +19,21 @@ Add this to your project's `pom.xml`:
 </dependencies>
 ```
 
+OR if using in a Quarkus 2 application:
+```xml
+...
+<dependencies>
+    ...
+    <dependency>
+        <groupId>org.jboss.pnc</groupId>
+        <artifactId>quarkus-pnc-client-auth</artifactId>
+        <version>PROJECT_VERSION</version>
+        <classifier>javax</classifier>
+    </dependency>
+    ...
+</dependencies>
+```
+
 ## Usage
 ```java
 @ApplicationScoped
